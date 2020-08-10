@@ -29,4 +29,10 @@
             <?php echo $book->s_price; ?>
         </div>
     </div>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Cover Image:</strong>
+            <img src="<?php echo base_url($book->c_image); ?>" alt="<?php echo $book->name; ?>" width="200px" />
+        </div>
+    </div>
 </div>
