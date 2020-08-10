@@ -18,6 +18,7 @@
           <th>Name</th>
           <th>Introduction</th>
           <th>Selling Price</th>
+          <th>Cover Image</th>
           <th width="220px">Action</th>
       </tr>
   </thead>
@@ -28,7 +29,8 @@
       <tr>
           <td><?php echo $book->name; ?></td>
           <td><?php echo $book->description; ?></td>     
-          <td><?php echo $book->s_price; ?></td>               
+          <td><?php echo $book->s_price; ?></td>  
+          <td><img src="<?php echo base_url($book->c_image); ?>" alt="<?php echo $book->name; ?>" width="200px" /></td>      
       <td>
         <form method="DELETE" action="<?php echo base_url('itemCRUD/delete/'.$book->book_id);?>">
           <a class="btn btn-info" href="<?php echo base_url('itemCRUD/'.$book->book_id) ?>"> show</a>
